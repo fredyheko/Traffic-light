@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box traffic Lights</title>
+    <style>
+        #light{
+            width: 150px;
+            background-color: #333;
+            height: 440px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 70px;
+            padding: 1px 0;
+            margin: auto;
+            border: 6px solid #000;
+        }        
+        #light .red{
+            position: relative;
+            background: red;
+            border: 6px solid black;
+            border-bottom: #000;
+            border-left: #000;
+            border-right: #000;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-top: 10px;
+            line-height: 120px;
+            box-shadow: 0 0 25px red;        
+        }
+        #light .yellow{
+            position: relative;
+            background: yellow;
+            width: 120px;
+            border: 6px solid black;
+            border-bottom: #000;
+            border-left: #000;
+            border-right: #000;
+            height: 120px;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-top: 20px;
+            line-height: 120px; 
+            box-shadow: 0 0 25px yellow;
+        }
+        #light .green{
+            position: relative;
+            border: 6px solid black;
+            border-bottom: #000;
+            border-left: #000;
+            border-right: #000;
+            background: green;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-top: 20px;
+            line-height: 120px; 
+            box-shadow: 0 0 25px green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="light">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+
+</body>
+</html>
